@@ -1,0 +1,19 @@
+<!-- 
+  <div class="noticias">
+  <h1>Ultimas noticias en Argentina</h1>
+  <div class="listado">
+    <div class="unaNoticia">
+      <h4>6 de Enero</h4>
+      <img src="//bucket.glanacion.com/anexos/fotos/16/2613316.jpg" >
+      <h2>Noticia 1</h2>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="noticias">
+  <h1>Ultimas noticias en Argentina</h1>
+  <div class="listado">
+    <app-noticia *ngFor="let item of noticias" [noticia]="item"></app-noticia>
+  </div>
+</div>
